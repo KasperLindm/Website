@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #999;
+    color: #e0e0e0;
     font-weight: 600;
     line-height: 1.3;
 }
@@ -24,7 +24,6 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #999;
 }
 
 ul {
@@ -46,7 +45,6 @@ li h1 {
 
 li a {
     display: block;
-    color: white;
     padding: 1px 10px;
     text-decoration: none;
     transform: translateY(15%);
@@ -58,15 +56,39 @@ li a:hover {
 }
 
 Main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.ListMain{
+    
+}
+
+.About{
+        grid-template-columns: repeat(2, 1fr);
+
 }
 
 div {
     align-self: center;
     justify-self: center;
-    width: 65%;
+    width: 460px;
     color: white;
+}
+
+.iframeDiv{
+    text-align: center;
+    margin: 2%;
+}
+
+.ListDiv {
+    align-self: center;
+    justify-self: center;
+    color: white;
+    margin: 1%;
 }
 
 .Contact{
