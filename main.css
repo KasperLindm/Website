@@ -27,6 +27,49 @@ a {
     color: #999;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li h1 {
+    display: block;
+    padding-right: 1em;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 1px 10px;
+    text-decoration: none;
+    transform: translateY(15%);
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+Main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div {
+    width: 65%;
+}
+
+div h2 {
+    text-align: center;
+}
+
 b, strong {
     font-weight: 600;
 }
