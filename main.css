@@ -47,7 +47,16 @@ li a {
     display: block;
     padding: 1px 10px;
     text-decoration: none;
-    transform: translateY(15%);
+    transform: translateY(0);
+}
+
+li a h1 {
+     display: block;
+    padding-right: 1em;
+     padding-left: 1em;
+
+     display: block;
+    text-decoration: none;
 }
 
 li a:hover {
