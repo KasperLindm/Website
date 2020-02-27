@@ -12,6 +12,10 @@ body {
     padding: 0em 2em 4em;
 }
 
+codeSnippet{
+    
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #e0e0e0;
     font-weight: 600;
@@ -128,4 +132,61 @@ b, strong {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
     }
+}
+
+body .code
+{
+    width: 100%;
+}
+
+.code
+{
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    color: white;
+    margin: 0.3em;
+}
+
+.code ul{
+    margin: 0.em;
+    text-align: center;
+    width: 56.3%;
+}
+
+CodeSnippet
+{
+    background-color: #111;
+    font-size: 1vw;
+    width: 70%;
+    display: none;
+}
+
+.active {
+    background-color: wheat;
+}
+.collapsible {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 70%;
+    margin: 0.1em;
+}
+
+.active, .collapsible:hover {
+    background-color: #333;
+}
+
+.codeTitle{
+ 
+    text-align: center;
+    color: #e0e0e0;
+    font-weight: 600;
+    line-height: 1.3;width: 100%;
 }

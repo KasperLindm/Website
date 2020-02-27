@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
         <ul>        
              <li><a href="index.html"><h1>Kasper Lindmark</h1></a></li>     
              <li><a href="index.html"><h3>Projects</h3></a></li>
@@ -39,9 +40,102 @@
                  
                 <br><br>
                 
-                <a href="https://github.com/ThanksJupiter/SkelNet"><h3 style="color:skyblue">Source Code</h3></a>
+                <a href="https://github.com/ThanksJupiter/SkelNet"><h3 style="color:skyblue">Download</h3></a>
             </div>
         </Main>
-        
+         <div class = "code">
+             <h1 class="code">
+                Particles
+             </h1>
+            
+            <button type="button" class="collapsible" >Reuse old particles</button>
+
+            <CodeSnippet>
+              <pre class="prettyprint lang-cs" style="width: 90%;"> 
+SNParticleEffect* SNParticleSystem::ReuseParticleEffect()
+{
+	for (int i = 0; i < particleEffects.size(); i++)
+	{
+		if (!&particleEffects[i])
+			continue;
+
+		if (!&particleEffects[i]->isUsed)
+		{
+			return particleEffects[i];
+		}
+		else
+		{
+			return new SNParticleEffect();
+		}
+	}
+
+	return new SNParticleEffect();
+}
+</particleEffects.size();>
+            </pre>
+
+            </CodeSnippet> 
+        </div>
+         <div class = "code">
+             <h1 class = "codeTitle">
+                Math
+             </h1>
+            
+            <button type="button" class="collapsible">Rotate Vector</button>
+
+            <CodeSnippet>
+              <pre class="prettyprint lang-cs" style="width: 90%;"> 
+inline Vector2 RotateVector(Vector2 vec, float theta)
+{
+	SNMat3x3 mat =
+	{
+		cos(theta),	 sin(theta), 0,
+		-sin(theta), cos(theta), 0,
+		0, 0, 1
+	};
+
+	return MultiplyMat3x3Vec2(mat, vec);
+}
+            </pre>
+
+            </CodeSnippet> 
+             
+             <button type="button" class="collapsible">Translate Vector</button>
+
+            <CodeSnippet>
+              <pre class="prettyprint lang-cs" style="width: 90%;"> 
+inline Vector2 TranslateVector(Vector2 vec, Vector2 translation)
+{
+	SNMat3x3 mat =
+	{
+		1, 0, translation.x,
+		0, 1, translation.y,
+		0, 0, 1
+	};
+
+	return MultiplyMat3x3Vec2(mat, vec);
+}
+            </pre>
+
+            </CodeSnippet> 
+        </div>
+                
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    var codeSnip = this.nextElementSibling;
+    this.classList.toggle("active");
+
+    if (codeSnip.style.display === "block") {
+      codeSnip.style.display = "none";
+    } else {
+      codeSnip.style.display = "block";
+    }
+  });
+}
+</script>
     </body>
 </html>
