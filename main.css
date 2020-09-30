@@ -1,9 +1,10 @@
 html {
-    background: #151520;
+    background-color: #151520;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
+    background-color: #151520;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -13,11 +14,13 @@ body {
     align-content: center;
     flex-flow: column;
     color: #e0e0e0;
+    height: 100%;
 }
 
 main {
     padding: 3%;
       color: #e0e0e0;
+    height: 100%;
 }
 codeSnippet{
     
