@@ -112,11 +112,11 @@ div {
     align-items: center;
      flex-flow: column wrap;
     flex: stretch;
-     height: 1155em;
      width: 100%;
 }
 
 .PoemDiv {
+     font-size: 18px;
      position: relative;
      color: white;
      background-color: #333;
