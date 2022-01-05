@@ -100,6 +100,11 @@ div {
     margin: 2%;
 }
 
+.btn{
+     margin: 1em;
+     width: 30px;
+}
+
 .ListDiv {
     align-self: center;
     justify-self: center;
