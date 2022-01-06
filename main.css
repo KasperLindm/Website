@@ -133,6 +133,7 @@ div {
 
 @media only screen and (max-width: 1080px) {
    .PoemDiv {
+             font-size: 300%;
     width: 80%;
   }
 }
