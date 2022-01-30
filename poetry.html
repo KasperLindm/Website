@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +13,10 @@
          <ul>        
             <li><h1>Kasper Lindmark</h1></li>     
          </ul>
-         <Main id= "PoemList">  
+         <Main id= "PoemList">   
               <script>
-                   //function changeImage(id) {
-                   //     if (document.getElementById(id).src.indexOf("heart-solid.svg") != -1) 
-                   //     {
-                   //          document.getElementById(id).src = "heart-regular.svg";
-                   //     }
-                   //     else 
-                   //     {
-                   //          document.getElementById(id).src = "heart-solid.svg";
-                   //     }
-                   //}
-                   //<img class=\"btn\" id="+doc.querySelector('title').innerHTML+" src=\"heart-regular.svg\" onclick=\"changeImage(this.id)\">
-                   var x ="", i=1;
-                   while (i<153) {
+                   var x ="", i=162;
+              while (i>0) {
                    var obj;
                    fetch('Poems/poem ('+i+').html') 
                         .then(response => response.text()) 
@@ -34,12 +24,12 @@
                         .then(() => {
                         let parser = new DOMParser();
                         let doc = parser.parseFromString(obj, 'text/html');
-                        x = x +"<div class='PoemDiv'><h3>"+doc.querySelector('title').innerHTML + "<br><br></h3>"+ doc.querySelector('.content').innerHTML + "<br></i></div>";         
+                        x = x +"<div class='PoemDiv'>"+ doc.querySelector('.content').innerHTML+ "</div>";
                    })
                         .then(() => document.getElementById("PoemList").innerHTML = x)
-                   i++;
+                   i++
               }
-              </script>
+         </script>
          </Main>
      </body>
 </html>
