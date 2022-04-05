@@ -20,14 +20,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #e0e0e0;
     font-weight: 600;
     line-height: 1.3;
-         text-align: left;
-
-     
 }
 
 h2 {
     margin-top: 1.3em;
-     text-align: left;
 }
 
 a {
@@ -95,11 +91,129 @@ Main {
 div {
     align-self: center;
     justify-self: center;
-    width: 45%;
+    width: 460px;
     color: white;
-     padding: 1em;
+}
+
+.iframeDiv{
+    text-align: center;
+    margin: 2%;
+}
+
+.btn{
+     margin: 1em;
+     width: 30px;
+}
+
+.ListDiv {
+    align-self: center;
+    justify-self: center;
+    color: white;
+    margin: 1%;
+}
+
+#PoemList{
+     justify-content: center;
+    align-items: center;
+     flex-flow: column wrap;
+    flex: stretch;
+     width: 100%;
+}
+
+.PoemDiv {
+     font-size: 150%;
+     position: relative;
+     color: white;
+     background-color: #333;
+     margin: 2%;
+     padding: 3%;
+     width: 25%;
+     border-radius: 0.6em;
+}
+
+@media only screen and (max-width: 1080px) {
+   .PoemDiv {
+             font-size: 250%;
+    width: 80%;
+  }
+}
+
+.Contact{
+    text-align: center;
+}
+
+div h2 {
+    text-align: center;
 }
 
 b, strong {
     font-weight: 600;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+body .code
+{
+    width: 100%;
+}
+
+.code
+{
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    color: white;
+    margin: 0.3em;
+}
+
+.code ul{
+    margin: 0.em;
+    text-align: center;
+    width: 56.3%;
+}
+
+CodeSnippet
+{
+    background-color: #111;
+    font-size: 1vw;
+    width: 70%;
+    display: none;
+}
+
+.active {
+    background-color: wheat;
+}
+.collapsible {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 70%;
+    margin: 0.1em;
+}
+
+.active, .collapsible:hover {
+    background-color: #333;
+}
+
+.codeTitle{
+ 
+    text-align: center;
+    color: #e0e0e0;
+    font-weight: 600;
+    line-height: 1.3;width: 100%;
 }
