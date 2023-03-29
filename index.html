@@ -1,80 +1,364 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kasper Lindmark</title>
-        <meta name="description" content="Kasper Lindmark info.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <ul>        
-            <li><a href="index.html"><h1>Kasper Lindmark</h1></a></li>     
-            <li><a href="index.html"><h3>Projects</h3></a></li>
-        <li><a href="About.html"><h3>About</h3></a></li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kasper Lindmark</title>
+    <meta name="description" content="Kasper Lindmark's  portfolio" />
 
-        </ul>
-        
-        <Main class = "ListMain">
-            
-            <div class= "ListDiv">
-                <a href="Hexagroove.html">
-                <h2> Hexagroove (Internship)</h2>
-                <img src="Screenshots/HexagroovePoster.png" 
-                     alt="HexagroovePoster" 
-                     style="width:100%;">
-                </a>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/KasperL.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Kasper Lindmark</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Kasper Lindmark</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+               I love working with anything creative and to solve problems.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="linkedin.com/in/kasper-lindmark-889b8013a/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://www.kaggle.com/kasperlindmark" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/Kaggle-logo.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/KasperLindm" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.instagram.com/kasperlindmark/"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+               In my free time you would usually find me at my dest painting, working on some program, making music, or outside, playing with my dog. I have a degree in programming, a Google Data Analytics certificate and have been running my own business since 2020.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Kasper Lindmark</strong>
+                and I'm a <strong> Data Analyst </strong> located in
+                   Stockholm. I've worked on a variety of projects. My first big project was a <strong> Multiplatform </strong> system for the game Hexagroove. Recently I have been exploring <strong>Machine Learning</strong> and how to use it with different kinds of datasets.
+              </p> 
+              <p class="about__content-details-para">
+                I'm a curious person, and if im presented with something i know little about, it wouldn't be long before you find me nose deep in some obscure forum reading about it.
+                <strong> Contact</strong> me here.
+              </p>
             </div>
-            
-            <div class= "ListDiv">
-                <a href="SpringBreeze.html">
-                <h2> Spring Breeze (Group project)</h2>
-                <img src="Screenshots/springBreezePoster.jpg" 
-                     alt="Spring Breeze Poster" 
-                     style="width:100%;">
-                </a>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">Pandas</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">R</div>
+              <div class="skills__skill">BigQuery</div>
+              <div class="skills__skill">Tableau</div>
+              <div class="skills__skill">ML</div>
+              <div class="skills__skill">Google Sheets</div>
+              <div class="skills__skill">Excell</div>
+              <div class="skills__skill">Google Cloud</div>
+              <div class="skills__skill">+ More</div>
+
             </div>
-            
-            <div class= "ListDiv">
-                <a href="Nim.html">
-                <h2> Nim (Group project)</h2>
-                <img src="Screenshots/Nim.jpg"
-                     alt="Nim Poster" 
-                     style="width:100%;">
-                </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Some of the more important projects I've worked on recently
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/music_streamingjpg.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
             </div>
-             
-             <div class= "ListDiv">
-                <a href="Skelnet.html">
-                <h2> Skelnet (SDL Group Project)</h2>
-                <img src="Screenshots/Skelnet.jpg" 
-                     alt="Spring Breeze Poster" 
-                     style="width:100%;">
-                </a>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Music Streaming Analysis</h3>
+              <p class="projects__row-content-desc">
+                
+                   In this project I wanted to get an overview of what kind of listeners I have and their patterns over time. And to use that data to make a forecast on how future trends could look.
+                   <br><br>The goal was to better understand my data from streaming platforms, so I can keep making the right decissions for my artistic career.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Learn More</a
+              >
             </div>
-             
-            <div class= "ListDiv">
-                <a href="Asteroids%20SDL.html">
-                <h2> Asteroids (SDL Engine)</h2>
-                <video src="Screenshots/39ffeeb1dc6b56dc9448f244f63f21c8.mp4" 
-                     alt="Spring Breeze Poster" 
-                     style="width:100%;">
-                     </video>
-                </a>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/Hexagroove.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
             </div>
-             
-            <div class= "ListDiv">
-                <a href="DriftLine.html">
-                <h2> DriftLine (WIP drifting)</h2>
-                <img src="Screenshots/Drift2.jpg" 
-                     alt="Spring Breeze Poster" 
-                     style="width:100%;">
-                </a>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Hexagroove</h3>
+              <p class="projects__row-content-desc">
+During my internship at Ichigoichie, I worked on hexagroove. I worked on many different features but my main tasks were centered around porting to Xbox and Steam from Nintendo Switch and managing system specific data that come in varying formats and styles.   </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >learn More</a
+              >
             </div>
-               
-             
-             
-        </Main>
-    </body>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            If you want to reach out to me, please use this contact form or refer to my resume :)
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Kasper Lindmark</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
