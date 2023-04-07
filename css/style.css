@@ -704,10 +704,8 @@ textarea {
     top: 27px; } }
 
 .imported-frame {
-  display: block;
      margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-     height: 926px;
-  width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
 }

@@ -77,16 +77,29 @@
     </section>
     <section class="project-details">
       <div class="main-container">
-
+           
+        <span class="heading-sec__main"style="margin-top: 1.5em">Tableau DASHBOARDS</span>
+           
           <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
            </script>
 
-
           <tableau-viz class="imported-frame" id="tableauViz"       
-            src='https://public.tableau.com/views/Spotify2023-03-18/CountryDash?:language=en-US&:display_count=n&:origin=viz_share_link'      
-            toolbar="bottom" hide-tabs width=100%>
+            src='https://public.tableau.com/views/Spotify2023-03-18/StoresNSongs_Dash?:language=en-US&:display_count=n&:origin=viz_share_link'      
+            toolbar="bottom" hide-tabs width=100% height="856px">
+          </tableau-viz>
+           
+          <tableau-viz class="imported-frame" id="tableauViz"       
+            src='https://public.tableau.com/views/Spotify2023-03-18/Country_Dash?:language=en-US&:display_count=n&:origin=viz_share_link'      
+            toolbar="bottom" hide-tabs width=100% height="856px">
           </tableau-viz>
 
+          <tableau-viz class="imported-frame" id="tableauViz"       
+            src='https://public.tableau.com/views/Spotify2023-03-18/History_Dash?:language=en-US&:display_count=n&:origin=viz_share_link'      
+            toolbar="bottom" hide-tabs width=100% height="856px">
+          </tableau-viz>
+           
+           <span class="heading-sec__main" style="margin-top: 1.5em">Kaggle notebook</span>
+           
            <iframe src="https://www.kaggle.com/embed/kasperlindmark/music-streaming" style="border:none;" width=100% height="800px"></iframe>
              
         <div class="project-details__content">
